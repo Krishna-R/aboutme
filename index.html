@@ -1,77 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishna Rathod | Senior Software Engineer in Testing</title>
     <style>
+        /* General Styling */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
+
+        /* Header Styling */
         header {
-            background: #333;
+            background: #00539C; /* Dark blue background */
             color: #fff;
-            padding: 10px 0 5px 0; /* Reduced padding to decrease vertical space */
+            padding: 15px 0;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
+
         header h1 {
-            color: #fff; /* White color for the name */
             margin: 0;
-            font-size: 24px;
+            font-size: 28px;
         }
+
         header p {
-            margin: 5px 0 0 0; /* Reduced margin to decrease space */
+            margin: 5px 0 0 0;
             font-size: 18px;
         }
+
+        header .small {
+            font-size: 14px; /* Reduced size for the framework design text */
+        }
+
+        /* Container Styling */
         .container {
             width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
             background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
-        h1, h2, h3 {
-            color: #333;
+
+        /* Section Titles */
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 24px;
+            color: #00539C; /* Dark blue color for section headings */
         }
+
+        h3 {
+            color: #2C3E50; /* Slightly darker color for subheadings */
+            font-size: 20px;
+        }
+
+        /* List Styling */
         ul {
             list-style-type: none;
             padding: 0;
         }
+
         ul li {
             padding: 5px 0;
         }
+
+        /* Contact Info Styling */
         .contact-info {
             margin-bottom: 20px;
+            line-height: 1.8;
+            color: #333;
         }
+
         .contact-info p {
             margin: 5px 0;
         }
-        .intro-text {
+
+        .contact-info a {
+            color: #00539C; /* Dark blue color for links */
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Technical Skills Section */
+        .technical-skills ul {
+            columns: 2;
             margin-bottom: 20px;
+        }
+
+        .technical-skills ul li {
+            padding: 5px 0;
+            break-inside: avoid; /* Prevent breaking inside a column */
+        }
+
+        /* Experience Section */
+        .experience ul ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Rewards Section */
+        .rewards-recognitions ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 5px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #00539C;
+            color: #fff;
+            margin-top: 20px;
             font-style: italic;
-            color: #555;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Krishna Rathod</h1>
         <p>Senior Software Engineer in Testing</p>
+        <p class="small">(Automation framework design - API, Web, Mobile, Performance testing.)</p>
     </header>
 
     <div class="container">
+        <!-- Introduction Section -->
         <section class="intro-text">
-            <p>Welcome to my professional portfolio. I am a dedicated and experienced Senior Software Engineer in Testing with a strong focus on automation and performance testing. With a background in Information Technology, I have honed my skills in testing, development, and ensuring the security and performance of complex software systems. Explore my journey, skills, and accomplishments below.</p>
+            <p>
+			I’m a passionate and experienced Senior Software Engineer in Testing, specializing in automation and performance testing. With a solid background in Information Technology, I’ve developed a strong skill set in testing and development, focusing on ensuring the security and performance of complex software systems. Feel free to explore my journey, skills, and accomplishments below.
+			</p>
         </section>
 
+        <!-- Contact Information Section -->
         <section class="contact-info">
             <h2>Contact Information</h2>
             <p><strong>Phone:</strong> +91 9137700919</p>
@@ -80,32 +156,42 @@
             <p><strong>Location:</strong> Mumbai, India</p>
         </section>
 
+        <!-- Education Section -->
         <section class="education">
             <h2>Education</h2>
             <p><strong>Vidyalankar Institute of Technology (University of Mumbai)</strong></p>
             <p>Bachelor of Engineering in Information Technology</p>
         </section>
 
+        <!-- Technical Skills Section -->
         <section class="technical-skills">
             <h2>Technical Skills</h2>
             <ul>
                 <li><strong>Programming Languages:</strong> Java, JavaScript</li>
-                <li><strong>Automation Frameworks:</strong> Selenium, TestNG, REST Assured, Cucumber, Appium, XCUITest, UiAutomator2</li>
+                <li><strong>Automation Frameworks:</strong> Selenium, TestNG, REST Assured, Cucumber, Appium, Appium Inspector, XCUITest, UiAutomator2</li>
                 <li><strong>Databases:</strong> Postgres SQL, MongoDB</li>
-                <li><strong>Developer Tools:</strong> Git, BitBucket, Gitlab, Visual Studio Code, Idea IntelliJ</li>
-                <li><strong>Testing Tools & Other Skills:</strong> API Automation Testing, Performance Testing, UI Automation, Mobile App Automation, Debugging/Log Analysis</li>
+                <li><strong>Developer Tools:</strong> Git, BitBucket, Gitlab, Visual Studio Code, IntelliJ IDEA, Xcode, Android Studio</li>
+                <li><strong>Skills:</strong> API Automation Testing, Performance Testing, UI Automation, Mobile App Automation, Debugging/Log Analysis</li>
                 <li><strong>CI/CD & Monitoring Tools:</strong> Jenkins, Argo CD, Go CD, Dynatrace, Rancher, Kubernetes/K8</li>
             </ul>
         </section>
 
+        <!-- Experience Section -->
         <section class="experience">
             <h2>Experience</h2>
+
+            <!-- Current Position -->
             <h3>Zycus Infotech Pvt. Ltd. (May 2021 - Present | 3+ Years)</h3>
+
+            <!-- Senior Software Engineer in Testing -->
             <ul>
                 <li><strong>Senior Software Engineer in Testing (April 2024– Present)</strong></li>
                 <ul>
                     <li>Responsible for automation and performance testing of cloud-based & Gen AI enabled SaaS products.</li>
+                    <li>Creating framework for GenAI application suite.</li>
                 </ul>
+
+                <!-- Previous Positions -->
                 <li><strong>Software Engineer in Testing (April 2022– April 2024)</strong></li>
                 <ul>
                     <li>Contributed to JSP to Angular migration of applications and developed an automation framework for Angular pages.</li>
@@ -117,12 +203,14 @@
                     <li>Simulated load on the application to test load balancer, identified issues related to scaling and load balancing of K8 cluster.</li>
                     <li>Conducted performance testing and reported issues blocking performance release certification.</li>
                 </ul>
+
                 <li><strong>Associate Software Engineer in Testing (Sep 2021– April 2022)</strong></li>
                 <ul>
                     <li>Facilitated the release of bulk data import feature for the Web Application and tested it on lower and production environments.</li>
                     <li>Automated test cases for all APIs and UI operations of bulk data import.</li>
                     <li>Worked on request report management system and automated database-level test cases, ensuring accurate inter-service communication and data flow.</li>
                 </ul>
+
                 <li><strong>Trainee Software Engineer in Testing (May 2021– Sep 2021)</strong></li>
                 <ul>
                     <li>Refactored existing test cases, identified, and removed flaws.</li>
@@ -131,6 +219,7 @@
             </ul>
         </section>
 
+        <!-- Rewards and Recognitions Section -->
         <section class="rewards-recognitions">
             <h2>Rewards and Recognitions</h2>
             <ul>
@@ -140,5 +229,10 @@
             </ul>
         </section>
     </div>
+
+    <footer>
+        <p>"Strive for progress, perfection will follow"</p>
+    </footer>
 </body>
+
 </html>
